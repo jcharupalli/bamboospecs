@@ -28,7 +28,7 @@ public class PlanSpec {
             new BambooKey("INFRASYSATLASSIANTEST2JAVACOM"))
             .pluginConfigurations(new ConcurrentBuilds())
             .stages(new Stage("Default Stage")
-                    .jobs(new Job("Default Job",
+                    .jobs(new Job("Default Job1",
                             new BambooKey("JOB1"))
                             .tasks(new VcsCheckoutTask()
                                     .description("Checkout Default Repository")
