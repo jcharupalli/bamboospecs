@@ -25,7 +25,7 @@ public class PlanSpec {
                 .key(new BambooKey("INFRASYSATLASSIAN"))
                 .name("infrasys-atlassian1"),
             "infrasys-atlassian-test1-java-com",
-            new BambooKey("INFRASYSATLASSIANTEST2JAVACOM"))
+            new BambooKey("INFRASYSATLASSIANTEST11JAVACOM"))
             .pluginConfigurations(new ConcurrentBuilds())
             .stages(new Stage("Default Stage")
                     .jobs(new Job("Default Job1",
