@@ -43,7 +43,7 @@ public class PlanSpec {
     }
     
     public PlanPermissions planPermission() {
-        final PlanPermissions planPermission = new PlanPermissions(new PlanIdentifier("INFRASYSATLASSIAN", "INFRASYSATLASSIANTEST1JAVACOM"))
+        final PlanPermissions planPermission = new PlanPermissions(new PlanIdentifier("INFRASYSATLASSIAN", "INFRASYSATLASSIANTEST11JAVACOM"))
             .permissions(new Permissions()
                     .userPermissions("bamboo", PermissionType.EDIT, PermissionType.VIEW_CONFIGURATION, PermissionType.VIEW, PermissionType.ADMIN, PermissionType.CLONE, PermissionType.BUILD));
         return planPermission;
