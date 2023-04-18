@@ -24,7 +24,7 @@ public class PlanSpec {
         final Plan plan = new Plan(new Project()
                 .key(new BambooKey("INFRASYSATLASSIAN"))
                 .name("infrasys-atlassian1"),
-            "infrasys-atlassian-test2-java-com",
+            "infrasys-atlassian-test1-java-com",
             new BambooKey("INFRASYSATLASSIANTEST2JAVACOM"))
             .pluginConfigurations(new ConcurrentBuilds())
             .stages(new Stage("Default Stage")
@@ -43,7 +43,7 @@ public class PlanSpec {
     }
     
     public PlanPermissions planPermission() {
-        final PlanPermissions planPermission = new PlanPermissions(new PlanIdentifier("INFRASYSATLASSIAN", "INFRASYSATLASSIANTEST2JAVACOM"))
+        final PlanPermissions planPermission = new PlanPermissions(new PlanIdentifier("INFRASYSATLASSIAN", "INFRASYSATLASSIANTEST1JAVACOM"))
             .permissions(new Permissions()
                     .userPermissions("bamboo", PermissionType.EDIT, PermissionType.VIEW_CONFIGURATION, PermissionType.VIEW, PermissionType.ADMIN, PermissionType.CLONE, PermissionType.BUILD));
         return planPermission;
