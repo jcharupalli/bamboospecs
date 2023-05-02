@@ -46,13 +46,13 @@ public class PlanSpec {
     public PlanPermissions planPermission() {
         final PlanPermissions planPermission = new PlanPermissions(new PlanIdentifier("INFRASYSATLASSIAN1", "INFRASYSATLASSIANTEST11JAVACOM"))
             .permissions(new Permissions()
-                    .userPermissions("bamboo", PermissionType.EDIT, PermissionType.VIEW_CONFIGURATION, PermissionType.VIEW, PermissionType.ADMIN, PermissionType.CLONE, PermissionType.BUILD));
+                    .userPermissions("admin", PermissionType.EDIT, PermissionType.VIEW_CONFIGURATION, PermissionType.VIEW, PermissionType.ADMIN, PermissionType.CLONE, PermissionType.BUILD));
         return planPermission;
     }
     
     public static void main(String... argv) {
         //By default credentials are read from the '.credentials' file.
-        BambooServer bambooServer = new BambooServer("http://bamboo8latest:8085");
+        BambooServer bambooServer = new BambooServer("https://linux-41379.prod.atl-cd.net/bambo");
         final PlanSpec planSpec = new PlanSpec();
         
         final Plan plan = planSpec.plan();
