@@ -22,8 +22,8 @@ public class PlanSpec {
     
     public Plan plan() {
         final Plan plan = new Plan(new Project()
-                .key(new BambooKey("INFRASYSATLASSIAN"))
-                .name("infrasys-atlassian1"),
+                .key(new BambooKey("INFRASYSATLASSIAN1"))
+                .name("infrasys-atlassian11"),
             "infrasys-atlassian-test1-java-com",
             new BambooKey("INFRASYSATLASSIANTEST11JAVACOM"))
             .pluginConfigurations(new ConcurrentBuilds())
