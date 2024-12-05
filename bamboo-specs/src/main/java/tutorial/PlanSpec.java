@@ -52,7 +52,7 @@ public class PlanSpec {
     
     public static void main(String... argv) {
         //By default credentials are read from the '.credentials' file.
-        BambooServer bambooServer = new BambooServer("https://instenv-405602-4ma0.instenv.internal.atlassian.com/");
+        BambooServer bambooServer = new BambooServer("https://linux-87068.prod.atl-cd.net/bamboo");
         final PlanSpec planSpec = new PlanSpec();
         
         final Plan plan = planSpec.plan();
