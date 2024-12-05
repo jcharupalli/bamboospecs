@@ -33,7 +33,7 @@ public class PlanSpec {
                             .tasks(new VcsCheckoutTask()
                                     .description("Checkout Default Repository")
                                     .checkoutItems(new CheckoutItem().defaultRepository()))))
-            .linkedRepositories("newtest")
+            .linkedRepositories("webhooktest")
             
             
             .triggers(new BitbucketServerTrigger())
@@ -52,7 +52,7 @@ public class PlanSpec {
     
     public static void main(String... argv) {
         //By default credentials are read from the '.credentials' file.
-        BambooServer bambooServer = new BambooServer("https://linux-41379.prod.atl-cd.net/bambo");
+        BambooServer bambooServer = new BambooServer("https://instenv-405602-4ma0.instenv.internal.atlassian.com/");
         final PlanSpec planSpec = new PlanSpec();
         
         final Plan plan = planSpec.plan();
