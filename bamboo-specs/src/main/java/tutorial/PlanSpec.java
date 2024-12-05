@@ -33,7 +33,7 @@ public class PlanSpec {
                             .tasks(new VcsCheckoutTask()
                                     .description("Checkout Default Repository")
                                     .checkoutItems(new CheckoutItem().defaultRepository()))))
-            .linkedRepositories("webhooktest")
+            .linkedRepositories("bamboospecs")
             
             
             .triggers(new BitbucketServerTrigger())
