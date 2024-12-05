@@ -29,7 +29,7 @@ public class PlanSpec {
             .pluginConfigurations(new ConcurrentBuilds())
             .stages(new Stage("Default Stage")
                     .jobs(new Job("Default Job1",
-                            new BambooKey("JOB1"))
+                            new BambooKey("JOB2"))
                             .tasks(new VcsCheckoutTask()
                                     .description("Checkout Default Repository")
                                     .checkoutItems(new CheckoutItem().defaultRepository()))))
